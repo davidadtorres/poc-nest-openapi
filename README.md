@@ -92,4 +92,5 @@ no improvement identified.
 ## Conclusion
 It's verified, it's possible to create a complete API specification using the OpenAPI wrapper of Nest.js.
 
+
 `Initiated at July 9, 2021`

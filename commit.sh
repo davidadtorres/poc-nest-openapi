@@ -7,20 +7,22 @@
 #
 # Params:
 #   commit_message: Semantic Versioning commit message
-#   -r version: new version code to be released as vMAYOR.MINOR.PATCH
+#                   e.g. 'feat: CRUD endpoint with OpenAPI spec'
+#   -r version: new version code to be released as v{MAYOR}.{MINOR}.{PATCH}
 #
+
+SYNTAX="SYNTAX:\n  commit.sh 'commit_message' -r version\n \
+  \n  commit_message: Semantic Versioning commit message \
+  \n                  e.g. 'feat: CRUD endpoint with OpenAPI spec' \
+  \n  -r version: new version code to be released as v{MAYOR}.{MINOR}.{PATCH}"  
 
 if [ $# -gt 3 ] || [ $# -lt 1 ]
 then
-  echo -e "SYNTAX:\n  commit.sh 'commit_message' -r version\n \
-          \n  commit_message: Semantic Versioning commit message \
-          \n  -r version: new version code to be released as vMAYOR.MINOR.PATCH" 
+  echo -e "$SYNTAX"
   exit -1
 elif [ $# -eq 2 ] || ([ $# -eq 3 ] && [ "$2" != "-r" ])
 then
-  echo -e "SYNTAX:\n  commit.sh 'commit_message' -r version\n \
-          \n  commit_message: Semantic Versioning commit message \
-          \n  -r version: new version code to be released as vMAYOR.MINOR.PATCH" 
+  echo -e "$SYNTAX" 
   exit -1
 fi
 
