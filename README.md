@@ -9,7 +9,10 @@ Build a simple CRUD API demo to pets managements. The specification of this API 
     - [.env](#env)
     - [OpenAPI](#openapi)
 3. [Improvements](#improvements)
-4. [Conclusion](#conclusion)
+4. [References](#references)
+5. [Changelog](#changelog)
+6. [License](#license)
+7. [Conclusion](#conclusion)
 
 <a name="technologies"></a>
 ## Technologies
@@ -88,9 +91,21 @@ http://localhost:3000/swagger
 ## Improvements
 no improvement identified.
 
+<a name="references"></a>
+## References
+n/a
+
+<a name="changelog"></a>
+## Changelog
+[CHANGELOG.md](./CHANGELOG.md)
+
+<a name="license"></a>
+## License
+[MIT License](./LICENSE)
+
 <a name="conclusion"></a>
 ## Conclusion
-It's verified, it's possible to create a complete API specification using the OpenAPI wrapper of Nest.js.
+It's possible to create a complete API specification using the OpenAPI wrapper of Nest.js.
 
 
-`Initiated at July 9, 2021`
+*`Initiated at July 9, 2021`*

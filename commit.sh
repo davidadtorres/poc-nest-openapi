@@ -31,7 +31,7 @@ then
   echo -e "\nDANGER!!"
   echo -e "1. Increment Build index (package.json)"
   echo -e "2. Update the new version in the source code (package.json)"
-  echo -e "3. Update CHANGELOG (CHANGELOG.md)"
+  echo -e "3. Update Changelog (CHANGELOG.md)"
   echo -en "\nAre you sure? (y/n) "
   read opt
   if [ $opt != "y" ] && [ $opt != "Y" ]
