@@ -4,7 +4,7 @@ Build a simple CRUD API demo to pets managements. The specification of this API 
 ## Table of Contents
 1. [Technologies](#technologies)
 2. [Development](#development)
-    - [Database schema](#datase-schema)
+    - [Database schema](#database-schema)
     - [API design](#api-design)
     - [.env](#env)
     - [OpenAPI](#openapi)
@@ -34,7 +34,7 @@ Build a simple CRUD API demo to pets managements. The specification of this API 
 <a name="development"></a>
 ## Development
 
-<a name="api-design"></a>
+<a name="database-schema"></a>
 ### **Database schema**
 
 - *createdAt: Date = Date.now
@@ -108,7 +108,7 @@ npm install @nestjs/config @nestjs/mongoose @nestjs/swagger \
 Add these lines to the next files:
 
 **/src/main.ts**
-```javascript showLineNumbers
+```javascript {.line-numbers}
 [...]
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
