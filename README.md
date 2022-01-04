@@ -10,6 +10,7 @@ Build a simple CRUD API demo to pets managements. The specification of this API 
     - [OpenAPI](#openapi)
 3. [Getting started](#getting-started)
    - [Packages](#packages)
+   - [Source code](#source-code)
 4. [Improvements](#improvements)
 5. [References](#references)
 6. [Changelog](#changelog)
@@ -101,7 +102,35 @@ npm install @nestjs/config @nestjs/mongoose @nestjs/swagger \
             class-transformer class-validator mongoose swagger-ui-express
 ```
 
+<a name="source-code"></a>
+### **Source code**
 
+Add these lines to the next files:
+
+**/src/main.ts**
+```javascript
+[...]
+
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+import { ValidationPipe } from '@nestjs/common';
+
+async function bootstrap() {
+  [...]
+  
+  app.setGlobalPrefix('api');
+  app.useGlobalPipes(new ValidationPipe());
+
+  const config = new DocumentBuilder()
+    .setTitle('Cats example')
+    .setDescription('The cats API description')
+    .setVersion('1.0')
+    .build();
+  const document = SwaggerModule.createDocument(app, config);
+  SwaggerModule.setup('swagger', app, document);
+}
+
+[...]
+```
 
 
 <a name="improvements"></a>
