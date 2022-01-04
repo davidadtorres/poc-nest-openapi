@@ -108,7 +108,7 @@ npm install @nestjs/config @nestjs/mongoose @nestjs/swagger \
 Add these lines to the next files:
 
 **/src/main.ts**
-```javascript {.line-numbers}
+```javascript
 [...]
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
@@ -128,7 +128,30 @@ async function bootstrap() {
 }
 [...]
 ```
+**src/app.module.ts**
+```javascript
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { PetsModule } from './pets/pets.module';
+import { MongooseModule } from '@nestjs/mongoose';
 
+@Module({
+  imports: [
+    ConfigModule.forRoot(),
+    MongooseModule.forRoot(process.env.DB_URI),
+    PetsModule,
+  ],
+  controllers: [],
+  providers: [],
+})
+export class AppModule {}
+```
+Remove these files:
+- **src/app.service.ts**
+- **src/app.controller.ts**
+- **src/app.controller.spec.ts**
+
+Create **pets** directory like [this](https://github.com/davidadtorres/poc-nest-openapi/tree/master/src/pets)
 
 <a name="improvements"></a>
 ## Improvements
