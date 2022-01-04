@@ -97,7 +97,8 @@ no improvement identified.
 ### **Packages**
 
 ```sh
-npm install @nestjs/config @nestjs/mongoose @nestjs/swagger class-transformer class-validator mongoose swagger-ui-express
+npm install @nestjs/config @nestjs/mongoose @nestjs/swagger \
+class-transformer class-validator mongoose swagger-ui-express
 ```
 
 
