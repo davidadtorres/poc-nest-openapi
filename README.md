@@ -98,7 +98,7 @@ no improvement identified.
 
 ```sh
 npm install @nestjs/config @nestjs/mongoose @nestjs/swagger \
-class-transformer class-validator mongoose swagger-ui-express
+            class-transformer class-validator mongoose swagger-ui-express
 ```
 
 
