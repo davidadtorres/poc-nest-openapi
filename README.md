@@ -8,11 +8,13 @@ Build a simple CRUD API demo to pets managements. The specification of this API 
     - [API design](#api-design)
     - [.env](#env)
     - [OpenAPI](#openapi)
-3. [Improvements](#improvements)
-4. [References](#references)
-5. [Changelog](#changelog)
-6. [License](#license)
-7. [Conclusion](#conclusion)
+3. [Getting started](#getting-started)
+   - [Packages](#packages)
+4. [Improvements](#improvements)
+5. [References](#references)
+6. [Changelog](#changelog)
+7. [License](#license)
+8. [Conclusion](#conclusion)
 
 <a name="technologies"></a>
 ## Technologies
@@ -86,6 +88,20 @@ OpenAPI Specification URL:
 ```
 http://localhost:3000/swagger
 ```
+
+<a name="getting-started"></a>
+## Getting started
+no improvement identified.
+
+<a name="packages"></a>
+### **Packages**
+
+```sh
+npm install @nestjs/config @nestjs/mongoose @nestjs/swagger class-transformer class-validator mongoose swagger-ui-express
+```
+
+
+
 
 <a name="improvements"></a>
 ## Improvements
