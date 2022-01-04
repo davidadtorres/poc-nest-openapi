@@ -151,7 +151,7 @@ Remove these files:
 - **src/app.controller.ts**
 - **src/app.controller.spec.ts**
 
-Create **pets** directory like [this](https://github.com/davidadtorres/poc-nest-openapi/tree/master/src/pets)
+Create **src/pets** directory like [this](https://github.com/davidadtorres/poc-nest-openapi/tree/master/src/pets)
 
 Create **E2E tests** like [this](https://github.com/davidadtorres/poc-nest-openapi/tree/master/test)
 
