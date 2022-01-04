@@ -108,15 +108,13 @@ npm install @nestjs/config @nestjs/mongoose @nestjs/swagger \
 Add these lines to the next files:
 
 **/src/main.ts**
-```javascript
+```javascript showLineNumbers
 [...]
-
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
   [...]
-  
   app.setGlobalPrefix('api');
   app.useGlobalPipes(new ValidationPipe());
 
@@ -128,7 +126,6 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);
 }
-
 [...]
 ```
 
