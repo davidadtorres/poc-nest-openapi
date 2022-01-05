@@ -172,6 +172,11 @@ npm run start:dev
 npm run test:watch
 ```
 
+**Run E2E tests:**
+```bash
+npm run test:e2e
+```
+
 <a name="improvements"></a>
 ## Improvements
 no improvement identified.
