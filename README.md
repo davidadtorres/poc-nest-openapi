@@ -159,7 +159,7 @@ Create **E2E tests** like [this](https://github.com/davidadtorres/poc-nest-opena
 <a name="running"></a>
 ### **Running**
 
-Run DEV server
+**Run DEV server:**
 ```bash
 npm run start:dev
 ```
