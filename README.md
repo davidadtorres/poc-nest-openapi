@@ -116,7 +116,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
-  [...]
+  const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
   app.useGlobalPipes(new ValidationPipe());
 
@@ -127,6 +127,7 @@ async function bootstrap() {
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);
+  await app.listen(3000);
 }
 [...]
 ```
@@ -165,6 +166,10 @@ Create **E2E tests** like [this](https://github.com/davidadtorres/poc-nest-opena
 npm run start:dev
 ```
 
+**Run Unit tests:**
+```bash
+npm run test:watch
+```
 
 <a name="improvements"></a>
 ## Improvements
