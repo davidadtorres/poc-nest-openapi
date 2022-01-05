@@ -79,7 +79,8 @@ DELETE /api/pets/{id}
 
 ```sh
 # MongoDB configuration
-DB_URI=mongodb+srv://<user>:<pass>@<host>/<database>?retryWrites=true&w=majority
+DB_URI=mongodb+srv://<user>:<pass>@<host:port>/<database>?retryWrites=true&w=majority
+#DB_URI=mongodb://<user>:<pass>@<host:port>/<database>?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false
 ```
 
 <a name="openapi"></a>
