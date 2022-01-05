@@ -11,6 +11,7 @@ Build a simple CRUD API demo to pets managements. The specification of this API 
 3. [Getting started](#getting-started)
    - [Packages](#packages)
    - [Source code](#source-code)
+   - [Running](#running)
 4. [Improvements](#improvements)
 5. [References](#references)
 6. [Changelog](#changelog)
@@ -154,6 +155,15 @@ Remove these files:
 Create **src/pets** directory like [this](https://github.com/davidadtorres/poc-nest-openapi/tree/master/src/pets)
 
 Create **E2E tests** like [this](https://github.com/davidadtorres/poc-nest-openapi/tree/master/test)
+
+<a name="running"></a>
+### **Running**
+
+Run DEV server
+```bash
+npm run start:dev
+```
+
 
 <a name="improvements"></a>
 ## Improvements
